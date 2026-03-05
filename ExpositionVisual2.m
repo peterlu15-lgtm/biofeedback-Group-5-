@@ -237,7 +237,7 @@ stormFrac  = 0;
 
 %% ── Session State Machine ────────────────────────────────────────────────
 %  measure  -> 15s collect resting BPM
-%  pause    -> 30s rest before session
+%  pause    -> 15s rest before session
 %  rising   -> sun rises if BPM within restBPM+15
 %  frozen   -> sun holds if BPM > restBPM+15
 %  falling  -> sun reached top, descending
@@ -398,10 +398,10 @@ while ishandle(fig)
             end
 
         case 'pause'
-            remaining = max(0, ceil(30 - elapsed));
+            remaining = max(0, ceil(15 - elapsed));
             set(hPhaseMsg,'String', ...
                 sprintf('Raise your heart rate now!  %ds remaining', remaining),'Visible','on');
-            if elapsed >= 30
+            if elapsed >= 15
                 sessionPhase = 'rising';
                 set(hPhaseMsg,'String','<3 Now calm down -- bring your heart rate back','Visible','on');
                 disp('Rising phase started.');
