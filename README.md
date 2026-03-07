@@ -1,1 +1,2 @@
 # biofeedback-Group-5-
+ExPulse is an interactive biofeedback system designed to help users regulate their physiological state through real-time heart rate monitoring. By placing a finger on the integrated sensor, users engage with a dynamic "Flower Field" environment where their heart rate directly controls the rising of the sun and the blooming of flowers. This multimodal experience combines calming visual animations with synchronized audio to guide users toward a relaxed state, providing immediate sensory feedback to encourage controlled breathing and stress reduction.
